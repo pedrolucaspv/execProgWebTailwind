@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - ProgWeb</title>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            850: '#1f2937', // Cinza customizado para cards
+                            950: '#030712', // Fundo super escuro
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; }
+    </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-950 font-sans text-slate-800 dark:text-slate-300 transition-colors duration-500 flex flex-col min-h-screen">
+
+    <div class="w-full max-w-6xl mx-auto bg-white dark:bg-gray-900 shadow-2xl my-0 lg:my-8 lg:rounded-2xl overflow-hidden transition-colors duration-500 border border-gray-200 dark:border-gray-800">
+
+        <header class="flex justify-between items-center bg-white dark:bg-gray-900 p-6 border-b border-gray-200 dark:border-gray-800">
+            <a href="index.html" class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-violet-500 dark:from-purple-400 dark:to-violet-300">
+                Curso de Programação Web
+            </a>
+            
+            <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 focus:outline-none transition-all duration-300">
+                <svg id="sun-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <svg id="moon-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </button>
+        </header>
+
+        <nav class="bg-purple-700 dark:bg-purple-900 text-white shadow-md">
+            <ul class="flex flex-col md:flex-row md:space-x-1 p-0 list-none font-medium">
+                <li class="flex-1"><a href="index.html" class="block py-4 px-6 text-center hover:bg-purple-600 dark:hover:bg-purple-800 transition-colors">Página Principal</a></li>
+                <li class="flex-1"><a href="sumario.html" class="block py-4 px-6 text-center hover:bg-purple-600 dark:hover:bg-purple-800 transition-colors">Sumário</a></li>
+                <li class="flex-1"><a href="contato.html" class="block py-4 px-6 text-center bg-purple-800 dark:bg-purple-950">Contato</a></li> <li class="flex-1"><a href="sobre.html" class="block py-4 px-6 text-center hover:bg-purple-600 dark:hover:bg-purple-800 transition-colors">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <main class="p-8 md:p-16 space-y-20">
+            
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                
+                <div class="lg:col-span-1 space-y-4">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
+                        Entre em contato
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Tem alguma dúvida sobre desenvolvimento web ou quer fechar um projeto? Mande uma mensagem para nossa equipe.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Colaborações</h3>
+                        <a href="mailto:collab@exemplo.com" class="block text-purple-600 dark:text-purple-400 hover:underline mb-1 font-medium">collab@exemplo.com</a>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">+55 (22) 9999-1234</p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Imprensa</h3>
+                        <a href="mailto:press@exemplo.com" class="block text-purple-600 dark:text-purple-400 hover:underline mb-1 font-medium">press@exemplo.com</a>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">+55 (21) 9888-5678</p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Vagas</h3>
+                        <a href="mailto:vagas@exemplo.com" class="block text-purple-600 dark:text-purple-400 hover:underline mb-1 font-medium">vagas@exemplo.com</a>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">+55 (11) 9777-4321</p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Diga olá</h3>
+                        <a href="mailto:ola@exemplo.com" class="block text-purple-600 dark:text-purple-400 hover:underline mb-1 font-medium">ola@exemplo.com</a>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">+55 (22) 9123-4567</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="border-gray-200 dark:border-gray-800" />
+
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                
+                <div class="lg:col-span-1 space-y-4">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
+                        Nossos Escritórios
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Venha tomar um café com a gente em um de nossos hubs. Estamos espalhados pelas principais capitais de tecnologia.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Campos dos Goytacazes</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Av. Pelinca, 100<br>
+                            Centro, RJ 28000-000
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">São Paulo</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Av. Paulista, 1578<br>
+                            Bela Vista, SP 01310-200
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Rio de Janeiro</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Rua do Passeio, 38<br>
+                            Centro, RJ 20021-290
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition-colors duration-300">
+                        <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Florianópolis</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            Rod. SC-401, 4150<br>
+                            Saco Grande, SC 88032-005
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-100 dark:bg-gray-950 text-gray-600 dark:text-gray-500 p-8 text-center border-t border-gray-200 dark:border-gray-800">
+            <p class="text-sm">© 2025 Disciplina Programação Web. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        
+        const isDarkMode = localStorage.getItem('theme') === 'dark' || 
+                           (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+        function updateIcons(isDark) {
+            if (isDark) {
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        }
+
+        if (isDarkMode) {
+            htmlElement.classList.add('dark');
+            updateIcons(true);
+        } else {
+            htmlElement.classList.remove('dark');
+            updateIcons(false);
+        }
+
+        toggleButton.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                updateIcons(false);
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                updateIcons(true);
+            }
+        });
+    </script>
+</body>
+</html>
